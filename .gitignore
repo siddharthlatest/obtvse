@@ -17,5 +17,7 @@
 /log/*.log
 /tmp
 
-
 deploy.rb
+
+# Misc
+*~
