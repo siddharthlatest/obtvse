@@ -15,7 +15,8 @@ If you are new to Rails development, check out guides for getting your developme
     $ cd obtvse
     $ bundle install
     $ rake db:migrate
-    $ cp config/config.example.yml config/config.yml
+
+Edit `config/config.yml` to set up your site information.  To set up your admin username and password you will need to set your environment variables.
 
 Start the local server:
 
@@ -57,15 +58,21 @@ Check `ps` to see the state of app's processes:
 
     $ heroku ps
 
+
+
+
 Open the app
+=======
 
     $ heroku open
+
+Here's a quick [guide for installing on Heroku](http://natewienert.com/installing-obtvse-on-heroku).
+
 
 
 TODO
 ====
-- Draft preview and post save history
-- Lots of refactoring, cleanup and refinements
+- 
 
 
 

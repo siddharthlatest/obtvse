@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require obtvse.js
 //= require fitvids.js
 //= require posts.js
+//= require showdown.js
 //= require_tree ./admin
