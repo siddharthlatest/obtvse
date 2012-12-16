@@ -16,17 +16,19 @@
     <h1><%= link_to CONFIG['title'], root_url %></h1>
     <span><%= CONFIG['tagline'].html_safe %></span>
     <ul>
-      <% if CONFIG['twitter'] %>
-        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
+      <% if CONFIG['portfolio'] %>
+        <li><%= link_to 'Portfolio', 'http://' + CONFIG['portfolio'] %></li>
       <% end %>
       <% if CONFIG['github'] %>
-        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
+        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'], :target=> '_blank' %></li>
       <% end %>
       <% if CONFIG['email'] %>
-        <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
+        <li><%= link_to 'Say hi', "mailto:#{CONFIG['email']}?subject=whats up!", :target=> '_blank' %></li>
       <% end %>
-      <li><%= link_to 'Curriculum Vitae', 'http://dl.dropbox.com/u/24850881/CV.html' %></li>
-      <li><%= link_to 'rss feed', '/posts.rss' %></li>
+      <% if CONFIG['twitter'] %>
+        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'], :target=> '_blank' %></li>
+      <% end %>
+      <li><%= link_to 'rss feed', '/posts.rss', :target=> 'blank' %></li>
     </ul>
     <span class="powered-by">
       Powered by <a href="http://github.com/sids-aquarius/obtvse.git">Obtvse</a>
