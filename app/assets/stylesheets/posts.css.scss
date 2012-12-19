@@ -166,7 +166,6 @@ code {
 
   .contain {
     margin: 0 auto;
-    width: 600px;
   }
 
   input[type=text] {
@@ -516,7 +515,6 @@ fieldset.markdown {
 
 form .permalink {
  position: absolute;
- left: -34px;
  top: 12px;
  border: none;
  color: #ddd;
@@ -549,8 +547,8 @@ form .permalink {
   left: 0;
   top: 0;
   padding: 0 20px 100px;
-  height: 100%;
-  overflow: scroll;
+  bottom: 101px;
+  overflow-y: scroll;
           box-sizing: border-box;
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -602,5 +600,11 @@ nav.pagination a {
   }
   .actions {
     position: static;
+  }
+  #split #post-editor {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    left: 0;
   }
 }
