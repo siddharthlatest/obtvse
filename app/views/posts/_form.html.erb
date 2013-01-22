@@ -29,8 +29,8 @@
 
 <div id="publish-bar-hover">
   <div id="publish-bar">
-    <div class="contain">
-      <div class="left">
+    <div class="contain row-fluid">
+      <div class="span6">
         <a href="/admin">&laquo; Admin</a>
         <%= link_to 'Delete', @post, :confirm => 'Are you sure?', :method => :delete, :class => 'delete-bar' %>
         <%= link_to 'Options', '#options', :class => 'menu' %>
@@ -45,7 +45,7 @@
           </li>
         </ul>
       </div>
-      <div class="right">
+      <div class="span6">
         <%= f.label :draft %>
         <%= f.check_box :draft %>
         <%= f.submit 'Preview', :id => 'preview-button', :preview => true, :target => "_blank" %>
